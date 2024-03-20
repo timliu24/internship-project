@@ -3,7 +3,10 @@ from pages.base_page import Page
 
 
 class MainPage(Page):
-    SETTINGS_TAB = (By.XPATH, "//div[text()='Settings']")
+    # SETTINGS_TAB = (By.XPATH, "//div[text()='Settings']")
+    SETTINGS_TAB = (By.XPATH, "//a[@href='/settings' and @class='menu-button-block w-inline-block']")
+
+
 
     def open_main(self):
         self.open('https://soft.reelly.io/')

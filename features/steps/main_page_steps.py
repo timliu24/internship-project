@@ -13,3 +13,4 @@ def open_main(context):
 @when('Click on settings option')
 def click_on_settings_option(context):
     context.app.main_page.click_on_settings_option()
+    sleep(3) # Needed if test case ran on Firefox
