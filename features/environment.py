@@ -61,6 +61,11 @@ def browser_init(context, scenario_name):
     context.app = Application(context.driver)
 
 
+#  ### To run behave with allure in terminal, use: ###
+#  # behave -f allure_behave.formatter:AllureFormatter -o test_results/ features/tests/password.feature
+#  ### To generate report, run: ###
+#  # allure serve test_results/
+
 def before_scenario(context, scenario):
     logger.info(f'Started scenario: {scenario.name}')
     print('\nStarted scenario: ', scenario.name)
